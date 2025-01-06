@@ -1,0 +1,124 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSimetric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cálculo de Carga Simétrica"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Más campos y lógica para cálculos -->
+ <!-- Peso -->
+
+    <!-- Número de tirantes -->
+
+    <!-- Longitud de tirantes -->
+
+    <EditText
+        android:id="@+id/etPeso_sim"
+        android:layout_width="408dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="176dp"
+        android:hint="Peso total (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumeroTirantes_sim"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:hint="Número de tirantes"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPeso_sim" />
+
+    <!-- Altura -->
+    <EditText
+        android:id="@+id/etLongitudTirantes_sim"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:hint="Longitud de tirantes (m)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNumeroTirantes_sim" />
+
+    <!-- Botón Calcular -->
+
+    <!-- Resultados -->
+
+    <EditText
+        android:id="@+id/etAltura_sim"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:hint="Altura al gancho (m)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etLongitudTirantes_sim" />
+
+    <Button
+        android:id="@+id/btnCalcular_sim"
+        android:layout_width="176dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAltura_sim" />
+
+    <TextView
+        android:id="@+id/tvResultado_sim"
+        android:layout_width="401dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:text="Resultados"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalcular_sim" />
+
+    <TextView
+        android:id="@+id/tvDesc_sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text=" Carga Simétrica se basa en el supuesto de que el Centro de Gravedad (CoG) está ubicado en el centro geométrico de la carga, y que el peso se distribuye uniformemente entre los tirantes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSimetric" />
+
+    <TextView
+        android:id="@+id/tvFormul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Entradas:  Peso total de la carga (kilogramos). Número de tirantes. Longitud de los tirantes (metros). Altura entre el punto de carga y el gancho (metros)."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSimetric" />
+</androidx.constraintlayout.widget.ConstraintLayout>

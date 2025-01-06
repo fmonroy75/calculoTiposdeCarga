@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_simetric"
+        android:title="Carga Simétrica" />
+    <item
+        android:id="@+id/nav_asimetric"
+        android:title="Carga Asimétrica 2 tirantes" />
+    <item
+        android:id="@+id/nav_asimetric3"
+        android:title="Carga Asimétrica 3 tirantes" />
+    <item
+        android:id="@+id/nav_dynamic"
+        android:title="Carga Dinámica" />
+</menu>

@@ -1,0 +1,170 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Más campos y lógica para cálculos -->
+
+    <!-- Peso -->
+
+    <!-- Distancia al CoG (d1) -->
+    <TextView
+        android:id="@+id/tvAsimetric3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Cálculo de Carga Asimétrica"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Distancia al CoG (d2) -->
+
+    <EditText
+        android:id="@+id/etPeso_asim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:hint="Peso total (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDistancia1_asim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Distancia 1 al CoG (m)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPeso_asim" />
+
+    <EditText
+        android:id="@+id/etDistancia2_asim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Distancia 2 al CoG (m)"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/etDistancia1_asim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+	/>
+
+    <!-- Longitud de los tirantes (L1) -->
+
+    <!-- Longitud de los tirantes (L2) -->
+
+    <EditText
+        android:id="@+id/etDistancia3_asim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Distancia 2 al CoG (m)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDistancia2_asim" />
+
+    <EditText
+        android:id="@+id/etLongitud1_asim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Longitud de tirante 1 (m)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDistancia3_asim" />
+
+    <EditText
+        android:id="@+id/etLongitud2_asim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Longitud de tirante 2 (m)"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/etLongitud1_asim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <!-- Altura -->
+
+
+    <!-- Botón Calcular -->
+
+
+    <!-- Resultados -->
+
+    <EditText
+        android:id="@+id/etLongitud3_asim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Longitud de tirante 2 (m)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLongitud2_asim" />
+
+    <EditText
+        android:id="@+id/etAltura_asim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Altura al gancho (m)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLongitud3_asim" />
+
+    <Button
+        android:id="@+id/btnCalcular_asim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAltura_asim" />
+
+    <TextView
+        android:id="@+id/tvResultado_asim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Resultados aparecerán aquí"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalcular_asim" />
+
+    <TextView
+        android:id="@+id/tv_descrip_asim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Carga Asimétrica se refiere a una carga cuyo centro de gravedad (CoG) no está en el centro geométrico de la carga. Esto significa que los tirantes deben manejar diferentes tensiones y ángulos debido a la distribución desigual del peso."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_formul_asim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Entradas:  Peso ( 𝑊 W). Distancia de cada tirante al centro de gravedad ( 𝑑 1 d  1 ​   y  𝑑 2 d  2 ​  ). Longitudes de los tirantes ( 𝐿 1 L  1 ​   y  𝐿 2 L  2 ​  ). Altura ( 𝐻 H)."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAsimetric" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

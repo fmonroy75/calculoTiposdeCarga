@@ -1,0 +1,103 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvDynamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cálculo de Carga Dinamica"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Más campos y lógica para cálculos -->
+
+    <EditText
+        android:id="@+id/etPeso_dym"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        android:hint="Peso estático (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAceleracion_dym"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Aceleración adicional (m/s²)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPeso_dym" />
+
+    <EditText
+        android:id="@+id/etArea_dym"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Área expuesta al viento (m²)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAceleracion_dym" />
+
+    <EditText
+        android:id="@+id/etVelocidadViento_dym"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Velocidad del viento (m/s)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etArea_dym" />
+
+    <Button
+        android:id="@+id/btnCalcular_dym"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etVelocidadViento_dym" />
+
+    <TextView
+        android:id="@+id/tvResultado_dym"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        app:layout_constraintTop_toBottomOf="@id/btnCalcular_dym"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescrip_dyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Carga Dinámica, necesitamos integrar las fuerzas adicionales que afectan la carga, como el viento, movimientos del sistema o aceleraciones externas. Estas fuerzas suelen añadirse al peso estático de la carga para calcular tensiones ajustadas. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDynamic" />
+
+    <TextView
+        android:id="@+id/tvFormul_dyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Datos de entrada: Peso(kg), Aceleración adicional(m/s²), Área expuesta al viento(m²), Velocidad del viento(m/s)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescrip_dyn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
